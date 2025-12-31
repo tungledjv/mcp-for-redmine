@@ -6,10 +6,10 @@ import {
   createProjectTool,
   createTimeEntryTool,
   createUserTool,
-  deleteIssueTool,
-  deleteProjectTool,
-  deleteTimeEntryTool,
-  deleteUserTool,
+  // deleteIssueTool, // Commented out to prevent accidental deletion
+  // deleteProjectTool, // Commented out to prevent accidental deletion
+  // deleteTimeEntryTool, // Commented out to prevent accidental deletion
+  // deleteUserTool, // Commented out to prevent accidental deletion
   getCurrentUserTool,
   getIssueTool,
   getProjectTool,
@@ -33,7 +33,7 @@ import {
   getMembershipTool,
   createProjectMembershipTool,
   updateMembershipTool,
-  deleteMembershipTool,
+  // deleteMembershipTool, // Commented out to prevent accidental deletion
   // Issue Statuses
   listIssueStatusesTool,
   // Trackers
@@ -41,19 +41,19 @@ import {
   // Issue Relations
   listIssueRelationsTool,
   createIssueRelationTool,
-  deleteIssueRelationTool,
+  // deleteIssueRelationTool, // Commented out to prevent accidental deletion
   getIssueRelationTool,
   // Versions
   listVersionsTool,
   getVersionTool,
   createVersionTool,
   updateVersionTool,
-  deleteVersionTool,
+  // deleteVersionTool, // Commented out to prevent accidental deletion
   // Wiki Pages
   listWikiPagesTool,
   getWikiPageTool,
   createOrUpdateWikiPageTool,
-  deleteWikiPageTool,
+  // deleteWikiPageTool, // Commented out to prevent accidental deletion
   // Queries
   listQueriesTool,
   // Files
@@ -66,7 +66,7 @@ import {
   getGroupTool,
   createGroupTool,
   updateGroupTool,
-  deleteGroupTool,
+  // deleteGroupTool, // Commented out to prevent accidental deletion
   addUserToGroupTool,
   removeUserFromGroupTool,
   // Custom Fields
@@ -78,10 +78,10 @@ import {
   createIssueCategoryTool,
   getIssueCategoryTool,
   updateIssueCategoryTool,
-  deleteIssueCategoryTool,
+  // deleteIssueCategoryTool, // Commented out to prevent accidental deletion
   // Attachments
   getAttachmentTool,
-  deleteAttachmentTool,
+  // deleteAttachmentTool, // Commented out to prevent accidental deletion
   uploadAttachmentTool,
 } from "./tools";
 
@@ -96,7 +96,7 @@ server.registerTool(getUserTool.name, getUserTool.config, getUserTool.execute);
 server.registerTool(getCurrentUserTool.name, getCurrentUserTool.config, getCurrentUserTool.execute);
 server.registerTool(listUsersTool.name, listUsersTool.config, listUsersTool.execute);
 server.registerTool(updateUserTool.name, updateUserTool.config, updateUserTool.execute);
-server.registerTool(deleteUserTool.name, deleteUserTool.config, deleteUserTool.execute);
+// server.registerTool(deleteUserTool.name, deleteUserTool.config, deleteUserTool.execute); // Commented out to prevent accidental deletion
 
 // Project Tools
 server.registerTool(listProjectsTool.name, listProjectsTool.config, listProjectsTool.execute);
@@ -109,14 +109,14 @@ server.registerTool(
   unarchiveProjectTool.config,
   unarchiveProjectTool.execute
 );
-server.registerTool(deleteProjectTool.name, deleteProjectTool.config, deleteProjectTool.execute);
+// server.registerTool(deleteProjectTool.name, deleteProjectTool.config, deleteProjectTool.execute); // Commented out to prevent accidental deletion
 
 // Issue Tools
 server.registerTool(listIssuesTool.name, listIssuesTool.config, listIssuesTool.execute);
 server.registerTool(getIssueTool.name, getIssueTool.config, getIssueTool.execute);
 server.registerTool(createIssueTool.name, createIssueTool.config, createIssueTool.execute);
 server.registerTool(updateIssueTool.name, updateIssueTool.config, updateIssueTool.execute);
-server.registerTool(deleteIssueTool.name, deleteIssueTool.config, deleteIssueTool.execute);
+// server.registerTool(deleteIssueTool.name, deleteIssueTool.config, deleteIssueTool.execute); // Commented out to prevent accidental deletion
 
 // Time Entry Tools
 server.registerTool(
@@ -135,11 +135,11 @@ server.registerTool(
   updateTimeEntryTool.config,
   updateTimeEntryTool.execute
 );
-server.registerTool(
-  deleteTimeEntryTool.name,
-  deleteTimeEntryTool.config,
-  deleteTimeEntryTool.execute
-);
+// server.registerTool(
+//   deleteTimeEntryTool.name,
+//   deleteTimeEntryTool.config,
+//   deleteTimeEntryTool.execute
+// ); // Commented out to prevent accidental deletion
 // Membership Tools (Alpha)
 server.registerTool(
   listProjectMembershipsTool.name,
@@ -157,11 +157,11 @@ server.registerTool(
   updateMembershipTool.config,
   updateMembershipTool.execute
 );
-server.registerTool(
-  deleteMembershipTool.name,
-  deleteMembershipTool.config,
-  deleteMembershipTool.execute
-);
+// server.registerTool(
+//   deleteMembershipTool.name,
+//   deleteMembershipTool.config,
+//   deleteMembershipTool.execute
+// ); // Commented out to prevent accidental deletion
 
 // Issue Relation Tools (Alpha)
 server.registerTool(
@@ -174,11 +174,11 @@ server.registerTool(
   createIssueRelationTool.config,
   createIssueRelationTool.execute
 );
-server.registerTool(
-  deleteIssueRelationTool.name,
-  deleteIssueRelationTool.config,
-  deleteIssueRelationTool.execute
-);
+// server.registerTool(
+//   deleteIssueRelationTool.name,
+//   deleteIssueRelationTool.config,
+//   deleteIssueRelationTool.execute
+// ); // Commented out to prevent accidental deletion
 server.registerTool(
   getIssueRelationTool.name,
   getIssueRelationTool.config,
@@ -190,7 +190,7 @@ server.registerTool(listVersionsTool.name, listVersionsTool.config, listVersions
 server.registerTool(getVersionTool.name, getVersionTool.config, getVersionTool.execute);
 server.registerTool(createVersionTool.name, createVersionTool.config, createVersionTool.execute);
 server.registerTool(updateVersionTool.name, updateVersionTool.config, updateVersionTool.execute);
-server.registerTool(deleteVersionTool.name, deleteVersionTool.config, deleteVersionTool.execute);
+// server.registerTool(deleteVersionTool.name, deleteVersionTool.config, deleteVersionTool.execute); // Commented out to prevent accidental deletion
 
 // Wiki Page Tools (Alpha)
 server.registerTool(listWikiPagesTool.name, listWikiPagesTool.config, listWikiPagesTool.execute);
@@ -200,7 +200,7 @@ server.registerTool(
   createOrUpdateWikiPageTool.config,
   createOrUpdateWikiPageTool.execute
 );
-server.registerTool(deleteWikiPageTool.name, deleteWikiPageTool.config, deleteWikiPageTool.execute);
+// server.registerTool(deleteWikiPageTool.name, deleteWikiPageTool.config, deleteWikiPageTool.execute); // Commented out to prevent accidental deletion
 
 // Query Tools (Alpha)
 server.registerTool(listQueriesTool.name, listQueriesTool.config, listQueriesTool.execute);
@@ -248,11 +248,11 @@ server.registerTool(
   updateIssueCategoryTool.config,
   updateIssueCategoryTool.execute
 );
-server.registerTool(
-  deleteIssueCategoryTool.name,
-  deleteIssueCategoryTool.config,
-  deleteIssueCategoryTool.execute
-);
+// server.registerTool(
+//   deleteIssueCategoryTool.name,
+//   deleteIssueCategoryTool.config,
+//   deleteIssueCategoryTool.execute
+// ); // Commented out to prevent accidental deletion
 
 // Role Tools (Alpha)
 server.registerTool(listRolesTool.name, listRolesTool.config, listRolesTool.execute);
@@ -263,7 +263,7 @@ server.registerTool(listGroupsTool.name, listGroupsTool.config, listGroupsTool.e
 server.registerTool(getGroupTool.name, getGroupTool.config, getGroupTool.execute);
 server.registerTool(createGroupTool.name, createGroupTool.config, createGroupTool.execute);
 server.registerTool(updateGroupTool.name, updateGroupTool.config, updateGroupTool.execute);
-server.registerTool(deleteGroupTool.name, deleteGroupTool.config, deleteGroupTool.execute);
+// server.registerTool(deleteGroupTool.name, deleteGroupTool.config, deleteGroupTool.execute); // Commented out to prevent accidental deletion
 server.registerTool(addUserToGroupTool.name, addUserToGroupTool.config, addUserToGroupTool.execute);
 server.registerTool(
   removeUserFromGroupTool.name,
@@ -289,11 +289,11 @@ server.registerTool(getMyAccountTool.name, getMyAccountTool.config, getMyAccount
 
 // Attachment Tools (Alpha)
 server.registerTool(getAttachmentTool.name, getAttachmentTool.config, getAttachmentTool.execute);
-server.registerTool(
-  deleteAttachmentTool.name,
-  deleteAttachmentTool.config,
-  deleteAttachmentTool.execute
-);
+// server.registerTool(
+//   deleteAttachmentTool.name,
+//   deleteAttachmentTool.config,
+//   deleteAttachmentTool.execute
+// ); // Commented out to prevent accidental deletion
 server.registerTool(
   uploadAttachmentTool.name,
   uploadAttachmentTool.config,
