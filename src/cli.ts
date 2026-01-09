@@ -7,7 +7,7 @@ import { startMcpServerStdio } from "./index.js";
 const program = new Command();
 
 program
-  .name("@drjoy/mcp-for-redmine")
+  .name("@drjoy_vn/mcp-for-redmine")
   .description("Run the MCP server for Redmine with required credentials.")
   .option("-u, --url <url>", "Redmine base URL")
   .option("-k, --api-key <key>", "Redmine API key")
